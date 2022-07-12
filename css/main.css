@@ -1,0 +1,259 @@
+body {
+font-family: 'Open Sans';
+color: black;
+font-size: 15 px;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+
+}
+
+p {
+line-height: 27px;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(left, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(to right, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 62px;
+    color: white;
+    padding-bottom: 144px;
+}
+
+.wrapper {
+display: flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.dream {
+width: 565px;
+}
+
+.title {
+    font-size: 37px;
+}
+
+.title span {
+font-size: 59px;
+font-weight: 700px;
+}
+
+.intro { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 45px;
+    width: 405px;
+    margin-top: 25px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;
+    color: #2e2a1b;
+    border: #2e2a1b;
+    display: block;
+    width: 222px;
+    padding: 19px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+background: #d9ad00;
+
+}
+.desktop {
+margin-top: 62px;
+}
+
+.learn {
+    padding-top: 108px;
+    padding-bottom: 121px;
+    background: #fff;
+}
+
+.section-title {
+font-size: 30px;
+text-align: center;
+}
+
+.skills {
+display: flex;
+justify-content: space-between;
+margin-top: 70px;
+text-align: center;
+}
+
+.skill {
+    width: 270px;
+    background: url('../img/icon1.jpg') no-repeat center top;
+    padding-top: 90px;
+   
+}
+
+.skill-title {
+    font-size: 19px;
+   }
+
+.skill-text {
+    margin: 10;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.skill-travel {
+width: 270px;
+background: url('../img/icon2.jpg') no-repeat center top;
+padding-top: 90px;
+}
+
+.skill-worth {
+    width: 270px;
+    background: url('../img/icon3.jpg') no-repeat center top;
+    padding-top: 90px;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding-top: 110px;
+    padding-bottom: 105px;
+    text-align: center;
+}
+
+.form {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+   /*  padding-top: 58px; */
+    margin-top: 40px;
+}
+
+.input {
+    width: 340px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    height: 48px;
+    padding-left: 27px;
+    margin: 0 auto 15px;
+}
+
+.btn-form {
+width: 340px;
+border: 0;
+cursor: pointer;
+margin: 0 auto 15px;
+
+}
+
+
+.footer {
+padding: 50px 0;
+background: #164d7a;
+}
+
+.credits {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Responsive */
+
+/* 992px - 1200px */
+@media (max-width: 1200px) { 
+    .container { 
+        max-width: 960px; 
+        margin: 0 auto;
+    } 
+.desktop {
+    margin: 0 auto;
+}
+}
+
+/* 768px - 992px */
+@media (max-width: 992px) { 
+    .container { 
+        max-width: 720px; 
+    } 
+    .wrapper {
+        flex-direction: column;
+    }
+    .dream {
+        width: 100%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .logo { 
+        display: block;
+        margin: 0 auto;
+    }
+    .desktop {
+        display: block;
+        width: 641px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: auto;
+        margin-bottom: 30px;
+    }
+}
+
+/* 576px - 768px */
+@media (max-width: 768px) { 
+    .container { 
+        max-width: 540px; 
+    } 
+    .btn
+    { 
+        margin: 0 auto;
+        width: 100%;
+    }
+    .desktop {
+        width: 100%;
+    }
+    .dream {
+        text-align: center;
+        width: 100%;
+    }
+    .logo {
+    padding-bottom: 10px;
+ }
+.input {
+    width: 100%;
+    padding-left: 10px;
+}
+}
+
+/* 0px - 576px */
+@media (max-width: 576px) { 
+    .container { 
+        max-width: 90%; 
+    } 
+}
